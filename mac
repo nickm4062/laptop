@@ -148,7 +148,7 @@ switch_to_latest_ruby() {
   chruby "ruby-$(latest_installed_ruby)"
 }
 
-append_to_file "$shell_file" "alias laptop='bash <(curl -s https://raw.githubusercontent.com/cyborgshadow/laptop/master/laptop)'"
+append_to_file "$shell_file" "alias laptop='bash <(curl -s https://raw.githubusercontent.com/nickm4062/laptop/master/laptop)'"
 
 # shellcheck disable=SC2016
 append_to_file "$shell_file" 'export PATH="$HOME/.bin:$PATH"'
@@ -244,19 +244,19 @@ fi
 fancy_echo 'Updating Rubygems...'
 gem update --system
 
-fancy_echo "Installing useful gem packages..."
-gem_install_or_update 'bundler'
-gem_install_or_update 'berkshelf'
-gem_install_or_update 'chefspec'
-gem_install_or_update 'foodcritic'
-gem_install_or_update 'test-kitchen'
-gem_install_or_update 'kitchen-vagrant'
-gem_install_or_update 'knife-block'
-gem_install_or_update 'rubocop'
-gem_install_or_update 'thor-foodcritic'
-gem_install_or_update 'encrypt_data_bag'
-gem_install_or_update 'knife-spork'
-gem_install_or_update 'sensu-cli'
+# fancy_echo "Installing useful gem packages..."
+# gem_install_or_update 'bundler'
+# gem_install_or_update 'berkshelf'
+# gem_install_or_update 'chefspec'
+# gem_install_or_update 'foodcritic'
+# gem_install_or_update 'test-kitchen'
+# gem_install_or_update 'kitchen-vagrant'
+# gem_install_or_update 'knife-block'
+# gem_install_or_update 'rubocop'
+# gem_install_or_update 'thor-foodcritic'
+# gem_install_or_update 'encrypt_data_bag'
+# gem_install_or_update 'knife-spork'
+# gem_install_or_update 'sensu-cli'
 
 fancy_echo "Configuring Bundler ..."
 number_of_cores=$(sysctl -n hw.ncpu)
