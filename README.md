@@ -37,7 +37,7 @@ and once it appears, press `return` to launch it.
 In your Terminal window, copy and paste the command below, then press `return`.
 
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/cyborgshadow/laptop/master/laptop)
+bash <(curl -s https://raw.githubusercontent.com/nickm4062/laptop/update-2018-5-22/laptop)
 ```
 
 The [script](https://github.com/cyborgshadow/laptop/blob/master/mac) itself is
